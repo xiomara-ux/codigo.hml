@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="../css/estilo.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Pago</title>
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <img src="../imagenes/Logo glamoroso de maquillaje rosa-dorado.png" alt="Logo KLMXmakeup">
+    <span>KLMXmakeup</span>
+  </div>
+
+  <nav class="nav-menu">
+    <a href="index.html">Inicio</a>
+    <a href="colecciones.html">Colecciones</a>
+    <a href="carrito.html">Carrito</a>
+    <a href="sobrenosotros.html">Sobre Nosotros</a>
+    <a href="ofertas.html">Ofertas</a>
+    <a href="skincare.html">Skincare</a>
+    <a href="contacto.html">Contactanos</a>
+    <a href="inspiracion.html">Inspiracion</a>
+    <a href="categorias.html">Categorias</a>
+    <a href="reseñaspreguntas.html">Reseñas</a>
+    <a href="carrito.html" class="cart-icon">
+  <i class="fa-solid fa-bag-shopping"></i>
+</a>
+  </nav>
+</header>
+
+
+
+    <body>
+
+    <div class="checkout-container">
+        <h1>Tu pedido 💖</h1>
+
+        <div id="pedido"></div>
+
+        <h2 id="total"></h2>
+
+        <button onclick="pagar()" class="btn-finalizar">
+            Pagar 💳
+        </button>
+    </div>
+
+
+</script>
+
+    <script>
+let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+let total = 0;
+let html = "";
+
+for (let i = 0; i < carrito.length; i++) {
+    html += "<p>" + carrito[i].nombre + " - $" + carrito[i].precio + "</p>";
+    total += carrito[i].precio;
+}
+
+document.getElementById("pedido").innerHTML = html;
+document.getElementById("total").innerText = "Total a pagar: $" + total;
+
+function pagar() {
+    alert("💖 Pago realizado con éxito");
+    localStorage.clear();
+}
+</script>
+
+<script>
+function pagar() {
+    document.querySelector(".checkout-container").innerHTML = `
+        <h1>💖 ¡Gracias por tu compra!</h1>
+        <p>Tu pedido fue realizado con éxito ✨</p>
+        <a href="index.html" class="btn-volver">🏠 Volver al inicio</a>
+    `;
+
+    localStorage.clear();
+}
+</script>
+
+</body>
+</html>

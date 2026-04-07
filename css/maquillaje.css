@@ -1,0 +1,160 @@
+* { margin:0; padding:0; box-sizing:border-box; font-family:'Poppins', sans-serif; }
+
+body { background:#fff9fb; color:#444; }
+
+/* ================= HEADER ================= */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: white;
+}
+
+/* contenedor logo + nombre */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  object-fit: cover;
+
+  box-shadow: 
+    0 0 10px #f8bbd0,
+    0 0 20px #f4a3c0;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.brand img:hover {
+  transform: scale(1.08);
+  box-shadow: 
+    0 0 15px #f8bbd0,
+    0 0 30px #f4a3c0,
+    0 0 45px #f48fb1;
+}
+
+.brand span {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  color: #e48aa6;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* ================= NAV ================= */
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #777;
+}
+
+.nav-menu a:hover {
+  color: #f4a3c0;
+}
+
+/* carrito alineado correctamente */
+.cart-icon {
+  font-size: 22px;
+  color: #f4a3c0;
+  transition: 0.3s;
+}
+
+.cart-icon:hover {
+  color: #ff6fa5;
+  transform: scale(1.1);
+}
+
+.center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+body {
+    font-family: Arial;
+    background: #f7f7f7;
+}
+
+/* GRID DE PRODUCTOS */
+.productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 80px; /* 🔥 antes 60 → ahora más separado */
+    padding: 60px; /* más aire alrededor */
+}
+
+/* TARJETA */
+.producto {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.2s;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+}
+
+/* IMAGEN */
+.producto img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+}
+
+/* PRECIOS */
+.precio {
+    color: hotpink;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* BOTÓN */
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: 2px solid hotpink;
+    background: transparent;
+    border-radius: 20px;
+    cursor: pointer;
+    color: hotpink;
+}
+
+button:hover {
+    background: hotpink;
+    color: white;
+}
+
+.btn-volver {
+    display: inline-block;
+    padding: 10px 20px;
+    background: white;
+    color: hotpink;
+    border: 2px solid hotpink;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+/* Hover bonito */
+.btn-volver:hover {
+    background: hotpink;
+    color: white;
+    transform: translateX(-5px);
+}

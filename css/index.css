@@ -1,0 +1,279 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #fff9fb;
+  color: #444;
+}
+
+/* ================= HEADER ================= */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: white;
+}
+
+/* LOGO */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 10px #f8bbd0, 0 0 20px #f4a3c0;
+  transition: 0.3s;
+}
+
+.brand img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 15px #f8bbd0, 0 0 30px #f4a3c0;
+}
+
+.brand span {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  color: #e48aa6;
+  font-weight: 600;
+}
+
+/* NAV */
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #777;
+  transition: 0.3s;
+}
+
+.nav-menu a:hover {
+  color: #f4a3c0;
+}
+
+/* CARRITO */
+.cart-icon {
+  font-size: 22px;
+  color: #f4a3c0;
+  transition: 0.3s;
+}
+
+.cart-icon:hover {
+  color: #ff6fa5;
+  transform: scale(1.1);
+}
+
+/* ================= HERO VIDEO ================= */
+
+.hero {
+  position: relative;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.hero-video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* CAPA SUAVE */
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0.4);
+  pointer-events: none;
+}
+
+/* ================= BANNER TEXTO ================= */
+
+.banner-coleccion {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.contenido-banner {
+  position: relative;
+  z-index: 2;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #fff;
+}
+
+/* TITULO */
+.contenido-banner h2 {
+  font-size: 42px;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 10px;
+}
+
+/* TEXTO */
+.contenido-banner p {
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+/* BOTÓN PREMIUM */
+.btn-coleccion {
+  display: inline-block;
+  padding: 14px 35px;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #f24f97, #f8a9c9);
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+  box-shadow: 0 10px 25px rgba(242, 79, 151, 0.4);
+  position: relative;
+  z-index: 10;
+}
+
+.btn-coleccion:hover {
+  transform: translateY(-4px) scale(1.05);
+}
+
+/* ================= CATEGORIAS ================= */
+
+.titulo-categorias {
+  font-size: 28px;
+  margin: 30px 40px 15px;
+  color: #444;
+}
+
+/* BOTONES */
+.categorias-botones {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 40px 30px;
+  flex-wrap: wrap;
+}
+
+.cat-btn {
+  background: #f7d9e3;
+  color: #a64d79;
+  padding: 18px 35px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.cat-btn:hover {
+  background: #f4a3c0;
+  color: white;
+  transform: translateY(-5px);
+}
+
+/* ================= PRODUCTOS ================= */
+
+.titulo-productos {
+  font-size: 28px;
+  margin: 20px 40px;
+  color: #444;
+}
+
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  padding: 20px 40px;
+}
+
+.producto {
+  background: #fff;
+  border-radius: 15px;
+  padding: 15px;
+  text-align: center;
+  transition: 0.3s;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+}
+
+.producto img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.precio {
+  color: #f24f97;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.btn-carrito {
+  background: #f2def1;
+  border: 2px solid #f24f97;
+  color: #f24f97;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-carrito:hover {
+  background: #f24f97;
+  color: white;
+}
+
+/* ================= FOOTER ================= */
+
+.footer {
+  background-color: #f7d9e3;
+  text-align: center;
+  padding: 60px 20px 20px;
+}
+
+.footer h2 {
+  color: #c45a84;
+}
+
+.footer-texto {
+  max-width: 500px;
+  margin: auto;
+  font-size: 15px;
+}
+
+.footer-boton {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 28px;
+  background-color: #c45a84;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+}
+
+.footer-boton:hover {
+  background-color: #a9446e;
+}
+
+.footer-copy {
+  margin-top: 40px;
+  font-size: 13px;
+  color: #666;
+}

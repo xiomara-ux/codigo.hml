@@ -1,0 +1,253 @@
+* { margin:0; padding:0; box-sizing:border-box; font-family:'Poppins', sans-serif; }
+
+body { background:#fff9fb; color:#444; }
+
+/* ================= HEADER ================= */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: white;
+}
+
+/* contenedor logo + nombre */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  object-fit: cover;
+
+  box-shadow: 
+    0 0 10px #f8bbd0,
+    0 0 20px #f4a3c0;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.brand img:hover {
+  transform: scale(1.08);
+  box-shadow: 
+    0 0 15px #f8bbd0,
+    0 0 30px #f4a3c0,
+    0 0 45px #f48fb1;
+}
+
+.brand span {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  color: #e48aa6;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* ================= NAV ================= */
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #777;
+}
+
+.nav-menu a:hover {
+  color: #f4a3c0;
+}
+
+/* carrito alineado correctamente */
+.cart-icon {
+  font-size: 22px;
+  color: #f4a3c0;
+  transition: 0.3s;
+}
+
+.cart-icon:hover {
+  color: #ff6fa5;
+  transform: scale(1.1);
+}
+
+
+.contact-banner {
+    width: 90%;
+    margin: 35px auto;
+    background: linear-gradient(135deg, #f7bfd7, #f8d6b9);
+    border-radius: 20px;
+    padding: 70px 40px;
+    text-align: center;
+}
+
+.banner-content h1 {
+    font-size: 52px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.banner-content p {
+    font-size: 20px;
+    color: #fff;
+}
+
+.contact-section {
+    width: 90%;
+    margin: 0 auto 60px;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 40px;
+}
+
+.contact-info,
+.contact-form {
+    background: white;
+    border-radius: 20px;
+    padding: 35px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.contact-info h2,
+.contact-form h2 {
+    margin-bottom: 30px;
+    color: #f24f97;
+    font-size: 30px;
+}
+
+.info-item {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 30px;
+    align-items: flex-start;
+}
+
+
+.info-item img{
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+    object-fit:cover;
+    overflow: hidden;
+    padding:8px;
+
+}
+
+.info-item h3 {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.info-item p {
+    color: #666;
+    line-height: 1.5;
+}
+.socials{
+    display:none;
+    gap:15px;
+    margin-top:20px;
+}
+
+.socials a{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    background:#f24f97;
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    font-size:18px;
+    transition:.3s;
+}
+.socials a:hover{
+    transform:translateY(-4px);
+    background:#e13b84;
+}
+
+/* FORMULARIO */
+
+.contact-form{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.input-group{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+}
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:16px 18px;
+    border:1px solid #ddd;
+    border-radius:12px;
+    font-size:15px;
+    outline:none;
+    transition:.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+    border-color:#f24f97;
+}
+
+.contact-form textarea{
+    resize:none;
+}.contact-form button{
+    width:fit-content;
+    padding:14px 35px;
+    border:none;
+    border-radius:30px;
+    background:#f24f97;
+    color:#fff;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.contact-form button:hover{
+    background:#e13b84;
+}@media(max-width:900px){
+
+    .header{
+        flex-direction:column;
+        gap:20px;
+        padding:20px;
+    }
+
+    .nav{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .contact-section{
+        grid-template-columns:1fr;
+    }
+
+    .input-group{
+        grid-template-columns:1fr;
+    }
+
+    .contact-banner{
+        padding:50px 20px;
+    }
+
+    .banner-content h1{
+        font-size:38px;
+    }
+
+    .banner-content p{
+        font-size:17px;
+    }
+}
+

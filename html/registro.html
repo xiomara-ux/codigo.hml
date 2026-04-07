@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estiloRegistro.css">
+    <title>Registro KMLX</title>
+</head>
+<body>
+    <div class="login-container">
+
+        <div class="login-left">
+            <h2>Elige una de las siguientes opciones para confirmar tu identidad.</h2>
+
+            <button class="codigo-btn">
+                <span class="icono">🔑</span>
+                Recibir código de acceso por e-mail
+            </button>
+        </div>
+
+        <div class="login-right">
+            <h3>Entrar con e-mail y contraseña</h3>
+
+            <form>
+                <div class="input-group">
+                    <input type="email" placeholder="Ej.: ejemplo@mail.com">
+                </div>
+
+                <div class="input-group password-group">
+                    <input type="password" id="password" placeholder="Ingrese su contraseña">
+
+                    <span class="toggle-password" onclick="mostrarPassword()">
+                        👁
+                    </span>
+                </div>
+
+                <a href="#" class="forgot-password">Olvidé mi contraseña</a>
+
+                <button type="submit" class="login-btn">Entrar</button>
+
+                <p class="register-text">
+                    ¿No tiene una cuenta?
+                    <a href="#">Regístrese</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <script src="ScriptRegistro.js"></script>
+</body>
+</html>

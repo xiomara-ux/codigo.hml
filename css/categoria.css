@@ -1,0 +1,221 @@
+* { margin:0; padding:0; box-sizing:border-box; font-family:'Poppins', sans-serif; }
+
+body { background:#fff9fb; color:#444; }
+
+/* ================= HEADER ================= */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: white;
+}
+
+/* contenedor logo + nombre */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  object-fit: cover;
+
+  box-shadow: 
+    0 0 10px #f8bbd0,
+    0 0 20px #f4a3c0;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.brand img:hover {
+  transform: scale(1.08);
+  box-shadow: 
+    0 0 15px #f8bbd0,
+    0 0 30px #f4a3c0,
+    0 0 45px #f48fb1;
+}
+
+.brand span {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  color: #e48aa6;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* ================= NAV ================= */
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #777;
+}
+
+.nav-menu a:hover {
+  color: #f4a3c0;
+}
+
+/* carrito alineado correctamente */
+.cart-icon {
+  font-size: 22px;
+  color: #f4a3c0;
+  transition: 0.3s;
+}
+
+.cart-icon:hover {
+  color: #ff6fa5;
+  transform: scale(1.1);
+}
+/* GRID DE PRODUCTOS */
+.productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 80px; /* 🔥 antes 60 → ahora más separado */
+    padding: 60px; /* más aire alrededor */
+}
+
+/* TARJETA */
+.producto {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.2s;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+}
+
+/* IMAGEN */
+.producto img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+}
+
+/* PRECIOS */
+.precio {
+    color: hotpink;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* BOTÓN */
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: 2px solid hotpink;
+    background: transparent;
+    border-radius: 20px;
+    cursor: pointer;
+    color: hotpink;
+}
+
+button:hover {
+    background: hotpink;
+    color: white;
+}
+
+
+/* ================= FOOTER ================= */
+.footer {
+    background-color: #f7d9e3;
+    text-align: center;
+    padding: 60px 20px 20px;
+}
+
+.footer h2 {
+    color: #c45a84;
+    margin-bottom: 15px;
+}
+
+.footer-texto {
+    max-width: 500px;
+    margin: auto;
+    color: #444;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.footer-boton {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 28px;
+    background-color: #c45a84;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.footer-boton:hover {
+    background-color: #a9446e;
+}
+
+.footer-copy {
+    margin-top: 40px;
+    font-size: 13px;
+    color: #666;
+}
+
+/* ================= MÁS VENDIDOS ================= */
+
+.mas-vendidos {
+  padding: 40px;
+}
+
+.mas-vendidos h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+/* contenedor de botones */
+.botones-masvendidos {
+  display: flex;
+  gap: 15px;
+}
+
+/* estilo base coquette */
+.btn-coquette {
+  text-decoration: none;
+  padding: 12px 28px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #ffd6e8, #f4a3c0);
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 0 6px 15px rgba(244, 163, 192, 0.4);
+  transition: 0.3s;
+}
+
+/* hover elegante */
+.btn-coquette:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 10px 20px rgba(244, 163, 192, 0.6);
+}
+
+/* botón secundario diferente */
+.btn-coquette.outline {
+  background: transparent;
+  border: 2px solid #f4a3c0;
+  color: #f24f97;
+}
+
+.btn-coquette.outline:hover {
+  background: #f4a3c0;
+  color: white;
+}

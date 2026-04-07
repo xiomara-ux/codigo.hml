@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labios Beauty</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+   <header>
+  <div class="brand">
+    <img src="../imagenes/Logo glamoroso de maquillaje rosa-dorado.png" alt="Logo KLMXmakeup">
+    <span>KLMXmakeup</span>
+  </div>
+
+  <nav class="nav-menu">
+    <a href="index.html">Inicio</a>
+    <a href="colecciones.html">Colecciones</a>
+    <a href="carrito.html">Carrito</a>
+    <a href="sobrenosotros.html">Sobre Nosotros</a>
+    <a href="ofertas.html">Ofertas</a>
+    <a href="skincare.html">Skincare</a>
+    <a href="contacto.html">Contactanos</a>
+    <a href="inspiracion.html">Inspiracion</a>
+    <a href="categorias.html">Categorias</a>
+    <a href="reseñaspreguntas.html">Reseñas</a>
+    <a href="carrito.html" class="cart-icon">
+  <i class="fa-solid fa-bag-shopping"></i>
+</a>
+  </nav>
+</header>
+
+    <section class="productos-destacados">
+    <h2>💄 Descubre nuestros favoritos para labios</h2>
+    <p>Brillos, gloss, tintes y bálsamos que harán resaltar tu sonrisa ✨</p>
+
+        <nav>
+        <div class="carrito-contador">
+           🛒 Carrito: <span id="contador">0</span>
+        </div>
+    </nav>
+
+   <div class="destacados-grid">
+        <div class="card">
+            <img src="../imagenes/balsammo lip.webp" alt="Balsamo">
+            <h3>Balsamo ✨</h3>
+            <p>Balsamo hidratante para tus labios.</p>
+            <h4>$6.000</h4>
+            <button onclick="agregarCarrito('Bálsamo', 6.000)">
+              Agregar al carrito 🛒
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="../imagenes/blommlove hidratante.webp" alt="Bloom Love">
+            <h3>Bloom love❤️</h3>
+            <p>Cuida la resequedad en labios y da un color intenso.</p>
+            <h4>$12.000</h4>
+            <button onclick="agregarCarrito('Bloom Love', 12.000)">
+              Agregar al carrito 🛒
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="../imagenes/bloom sublime xl.jpg" alt="Brillo de labios">
+            <h3>Brillo marronsito que le da ese que ilumins tus labios💖</h3>
+            <p>Acabado natural y luminoso.</p>
+            <h4>$15.000</h4>
+            <button onclick="agregarCarrito('Brillo De Labios', 15.000)">
+              Agregar al carrito 🛒
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="../imagenes/brillo labial juicy.jpg" alt="Labial juicy">
+            <h3>Labial juicy🤍</h3>
+            <p>Perfecto para el día a día.</p>
+            <h4>$8.000</h4>
+            <button onclick="agregarCarrito('labial juicy', 8.000)">
+              Agregar al carrito 🛒
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="../imagenes/brillo.webp" alt="Brilli Brilli">
+            <h3>Brillo perfecto en tus labios🤍</h3>
+            <p>Perfecto para el día a día.</p>
+            <h4>$9.000</h4>
+            <button onclick="agregarCarrito('Brilli Brilli', 9.000)">
+              Agregar al carrito 🛒
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="../imagenes/brollo labial.webp" alt="Brillo labial">
+            <h3>Brillo labial🤍</h3>
+            <p>Perfecto para el día a día y cuida tus labios.</p>
+            <h4>$10.000</h4>
+            <button onclick="agregarCarrito('Brillo Labial', 10.000)">
+              Agregar al carrito 🛒
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="../imagenes/click gloss.jpg" alt="click gloss">
+            <h3>click gloss🤍</h3>
+            <p>glosss hermoso cn brillo..</p>
+            <h4>$8.000</h4>
+            <button onclick="agregarCarrito('Click Gloss', 8.000)">
+              Agregar al carrito 🛒
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="../imagenes/comfort lip.webp" alt="confort lip">
+            <h3>Comfort lip🤍</h3>
+            <p>Reconforta tus labios y los cuida.</p>
+            <h4>$12.000</h4>
+            <button onclick="agregarCarrito('Comfort Lip', 12.000)">
+               Agregar al carrito 🛒
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="../imagenes/lapiz para labios.jpg" alt="Lapiz para labios">
+            <h3>Lapiz para labios🤍</h3>
+            <p>Ayuda a a que remarques tus labios y perfecto para el dia a dia.</p>
+            <h4>$5.000</h4>
+            <button onclick="agregarCarrito('Lapiz para Labios', 5.000)">
+             Agregar al carrito 🛒
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="../imagenes/lip balm mint.webp" alt="Lip Balm">
+            <h3>Lip Balm🤍</h3>
+            <p>Perfecto para el día a día.</p>
+            <h4>$9.000</h4>
+            <button onclick="agregarCarrito('Lip Balm', 9.000)">
+              Agregar al carrito 🛒
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="../imagenes/lip gloss scene.webp" alt="Lip Gloss scene">
+            <h3>Lip Gloss Scene🤍</h3>
+            <p>Perfecto para el día a día.</p>
+            <h4>$12.000</h4>
+            <button onclick="agregarCarrito('Lip Gloss Scene', 12.000)">
+              Agregar al carrito 🛒
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="../imagenes/lip kit.webp" alt="Lip Kit">
+            <h3>Lip Kit🤍</h3>
+            <p>Perfecto para el día a día.</p>
+            <h4>$10.000</h4>
+            <button onclick="agregarCarrito('Lip Kit', 10.000)">
+             Agregar al carrito 🛒
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="../imagenes/lip oil hidratante.webp" alt="Lip Oil Hidratante">
+            <h3>Lip Oil Hidratante🤍</h3>
+            <p>Cuida tus labios.</p>
+            <h4>$8.000</h4>
+            <button onclick="agregarCarrito('Lip Oil Hidratante', 8.000)">
+              Agregar al carrito 🛒
+             </button>
+        </div>
+
+        <div class="card">
+            <img src="../imagenes/lip reparador.jpg" alt="Lip Reparador">
+            <h3>Lip Reparador🤍</h3>
+            <p>Repara tus labios.</p>
+            <h4>$9.000</h4>
+            <button onclick="agregarCarrito('Lip Reparador', 9.000)">
+              Agregar al carrito 🛒
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="../imagenes/lippie balm.webp" alt="Loppie Balm">
+            <h3>Lippie Balm🤍</h3>
+            <p>Perfecto para el día a día.</p>
+            <h4>$8.000</h4>
+            <button onclick="agregarCarrito('Loppie Balm', 8.000)">
+             Agregar al carrito 🛒
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="../imagenes/loi oli atenea.jpg" alt="Lip Oil Atenea">
+            <h3>Lip Oil Atenea🤍</h3>
+            <p>Perfecto para el día a día.</p>
+            <h4>$12.000</h4>
+            <button onclick="agregarCarrito('Lip Oil Atenea', 12.000)">
+               Agregar al carrito 🛒
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="../imagenes/mini tint bkoom.jpg" alt="Mini Tint Bloom">
+            <h3>Mini Tint🤍</h3>
+            <p>Perfecto para el día a día.</p>
+            <h4>$7.000</h4>
+            <button onclick="agregarCarrito('Mini tint Bloom', 7.000)">
+              Agregar al carrito 🛒
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="../imagenes/peptide lip balm.webp" alt="Peptide Lip Balm">
+            <h3>Peptide Lip Balm🤍</h3>
+            <p>Perfecto para el día a día.</p>
+            <h4>$6.000</h4>
+            <button onclick="agregarCarrito('Peptide lip Balm', 6.000)">
+             Agregar al carrito 🛒
+           </button>
+        </div>
+
+        <div class="card">
+            <img src="../imagenes/rehab hidratante.webp" alt="Rehab Hidratante">
+            <h3>Rehab Hidratante🤍</h3>
+            <p>Perfecto para el día a día.</p>
+            <h4>$10.000</h4>
+            <button onclick="agregarCarrito('Rehab Hidratante', 10.000)">
+             Agregar al carrito 🛒
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="../imagenes/spiral glosss.jpg" alt="Spiral Gloss">
+            <h3>Spiral Gloss🤍</h3>
+            <p>Le da un brillo intenso a tus labios.</p>
+            <h4>$8.000</h4>
+            <button onclick="agregarCarrito('Spiral Gloss', 8.000)">
+             Agregar al carrito 🛒
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="../imagenes/tinta 2 en 1.jpg" alt="Tinta 2 en 1">
+            <h3>Tinta 2 en 1🤍</h3>
+            <p>Perfecto para el día a día.</p>
+            <h4>$11.000</h4>
+            <button onclick="agregarCarrito('Tinta 2 en 1', 11.000)">
+              Agregar al carrito 🛒
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="../imagenes/velvet lip gloss.webp" alt="Velvet Lip Gloss">
+            <h3>Velvet Lip Gloss🤍</h3>
+            <p>Brillo perfecto para tus labios.</p>
+            <h4>$10.000</h4>
+            <button onclick="agregarCarrito('Velvet Lip Gloss', 10.000)">
+              Agregar al carrito 🛒
+            </button>
+        </div>
+    </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Labios Beauty 💋</p>
+    </footer>
+
+    <button onclick="irAPagar()" class="btn-pagar">
+    Ir a pagar 💳
+   </button>
+
+
+<script>
+let carrito = [];
+let contador = 0;
+
+function agregarCarrito(nombre, precio) {
+    carrito.push({ nombre, precio });
+    contador++;
+
+    document.getElementById("contador").innerText = contador;
+
+    alert(nombre + " agregado al carrito 🛒");
+}
+
+function irAPagar() {
+    if (carrito.length > 0) {
+        localStorage.setItem("carrito", JSON.stringify(carrito));
+        window.location.href = "checkout.html";
+    } else {
+        alert("🛒 Primero agrega productos al carrito");
+    }
+}
+</script>
+
+<footer class="footer">
+    <div class="footer-contenido">
+
+        <h2>KLMXmakeup</h2>
+
+        <p class="footer-texto">
+            La belleza también es arte. Creamos productos delicados,
+            modernos y llenos de personalidad para resaltar tu esencia.
+        </p>
+
+        <a href="./contacto.html" class="footer-boton">
+            Contáctanos
+        </a>
+
+    </div>
+
+    <div class="footer-copy">
+        © 2026 KLMXmakeup · Todos los derechos reservados
+    </div>
+</footer>
+
+</body>
+</html>

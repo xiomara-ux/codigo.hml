@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estiloMayorista.css">
+    <title>Hazte Mayorista - KMLX</title>
+</head>
+<body>
+
+    <div class="info-panel">
+        <span class="mini-title">HAZTE MAYORISTA</span>
+
+        <h1>¡QUEREMOS SER TU MARCA FAVORITA DE MAQUILLAJE!</h1>
+
+        <p class="intro">
+            Contamos con dos planes mayoristas para que empieces tu emprendimiento.
+        </p>
+
+        <div class="planes">
+            <div class="plan-card">
+                <h3>EMPRENDEDOR</h3>
+                <span>$400.000</span>
+            </div>
+ 
+            <div class="plan-card">
+                <h3>DISTRIBUIDOR</h3>
+                <span>$1.000.000</span>
+                </div>
+            </div>
+
+            <a href="registro.html" class="login-btn">Iniciar sesión</a>
+
+        <div class="extra-info">
+            <span>Queremos ser parte de tu emprendimiento</span>
+            <h2>¿Por qué ser KLMX Mayorista?</h2>
+
+            <p>
+                KLMX se caracteriza por ofrecer maquillaje y skincare de alta calidad,
+                productos en tendencia y una marca femenina, moderna y elegante.
+            </p>
+
+            <p>
+                Todos nuestros productos son originales y te ayudamos con fotos,
+                catálogos y contenido para que puedas vender más fácilmente.
+            </p>
+        </div>
+    </div>
+    <div class="contenedor">
+
+        <div class="titulo">
+            <h1>Registro Mayorista</h1>
+            <p>Selecciona el tipo de registro que deseas realizar.</p>
+        </div>
+
+        <div class="tipo-persona">
+            <label>
+                <input type="radio" name="tipo" value="natural" checked>
+                Persona Natural
+            </label>
+
+            <label>
+                <input type="radio" name="tipo" value="empresa">
+                Empresa
+            </label>
+        </div>
+
+        <!-- PERSONA NATURAL -->
+        <div id="form-natural" class="formulario-activo">
+
+            <div class="campo">
+                <label>Nombre</label>
+                <input type="text" placeholder="Escribe tu nombre">
+            </div>
+
+            <div class="campo">
+                <label>Apellido</label>
+                <input type="text" placeholder="Escribe tus apellidos">
+            </div>
+
+            <div class="campo">
+                <label>Número de celular</label>
+                <input type="text" placeholder="Celular">
+            </div>
+
+            <div class="campo">
+                <label>Correo electrónico</label>
+                <input type="email" placeholder="Escribe tu e-mail">
+            </div>
+
+            <div class="campo">
+                <label>¿Dónde vendes o quisieras vender nuestros productos?</label>
+                <select>
+                    <option>Seleccionar</option>
+                    <option>Tienda física</option>
+                    <option>Instagram</option>
+                    <option>Facebook</option>
+                    <option>TikTok</option>
+                    <option>Página web</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- EMPRESA -->
+        <div id="form-empresa" class="formulario-oculto">
+
+            <div class="campo">
+                <label>Nombre de la empresa</label>
+                <input type="text" placeholder="Coloque el nombre de la empresa">
+            </div>
+
+            <div class="campo">
+                <label>N.I.T</label>
+                <input type="text" placeholder="Coloque su NIT sin dígito de verificación">
+            </div>
+
+            <div class="campo">
+                <label>Número de celular</label>
+                <input type="text" placeholder="Celular">
+            </div>
+
+            <div class="campo">
+                <label>Correo electrónico</label>
+                <input type="email" placeholder="Escribe tu e-mail">
+            </div>
+
+            <div class="campo">
+                <label>¿Dónde vendes o quisieras vender nuestros productos?</label>
+                <select>
+                    <option>Seleccionar</option>
+                    <option>Tienda física</option>
+                    <option>Instagram</option>
+                    <option>Facebook</option>
+                    <option>TikTok</option>
+                    <option>Página web</option>
+                </select>
+            </div>
+
+            <div class="campo archivo">
+                <label>Carga el RUT</label>
+                <input type="file">
+            </div>
+        </div>
+
+        <div class="terminos">
+            <label>
+                <input type="checkbox">
+                Acepto <a href="#">políticas de tratamiento de datos y términos y condiciones</a>
+            </label>
+        </div>
+
+        <button class="btn-continuar">CONTINUAR</button>
+
+    </div>
+
+    <script src="ScriptMayorista.js"></script>
+</body>
+</html>
